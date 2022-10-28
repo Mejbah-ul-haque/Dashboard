@@ -11,23 +11,29 @@ import {
 	MdBusinessCenter,
 	MdDoubleArrow,
 	MdOutlineDashboard,
-  MdKeyboardArrowUp,
+	MdKeyboardArrowUp,
 } from "react-icons/md";
 import { RiContactsLine, RiProjectorLine } from "react-icons/ri";
 import { TbFileInvoice } from "react-icons/tb";
 import { FiBox } from "react-icons/fi";
 import { Link, Outlet } from "react-router-dom";
+import Header from "../Shared";
 
-const Dashboard = () => {
+const Layout = () => {
 	return (
-		<div className="drawer drawer-mobile lg:mt-[-80px]">
+		<div className="drawer drawer-mobile">
 			<input id="dashboard-sidebar" type="checkbox" className="drawer-toggle" />
 			<div className="drawer-content">
-				<Outlet></Outlet>
+				<div>
+					<Header></Header>
+				</div>
+				<div className="lg:ml-8">
+					<Outlet></Outlet>
+				</div>
 			</div>
 			<div className="drawer-side">
 				<label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
-				<ul className="menu overflow-y-auto w-64 text-base-content bg-gray-900">
+				<ul className="menu overflow-y-auto w-48 text-base-content bg-gray-900">
 					{/* <!-- Sidebar content here --> */}
 					<li className="text-gray-400">
 						<a>Menu</a>
@@ -38,11 +44,14 @@ const Dashboard = () => {
 								<p className=" mr-2">
 									<MdOutlineDashboard />
 								</p>
-								<p class="text-sm leading-3">Dashboard</p>
+								<p class="text-sm leading-3">
+									<Link to="/">Dashboard</Link>
+								</p>
 							</div>
-							<span className="">
+							
+							<button className="">
 								<MdDoubleArrow />
-							</span>
+							</button>
 						</a>
 						<ul className="p-2 bg-slate-500 ">
 							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
@@ -391,4 +400,4 @@ const Dashboard = () => {
 	);
 };
 
-export default Dashboard;
+export default Layout;

@@ -26,7 +26,7 @@ import {
 	BsSearch,
 } from "react-icons/bs";
 
-export default function Sidebar() {
+export default function Header() {
 	return (
 		<>
 			<div className="navbar bg-white">
@@ -40,7 +40,7 @@ export default function Sidebar() {
 						</label>
 						<ul
 							tabIndex={0}
-							className="menu menu-compact dropdown-content mt-3 p-2 shadow text-white bg-gray-900 rounded-box w-52"
+							className="menu menu-compact dropdown-content mt-3 p-3 shadow text-white bg-gray-900 rounded-box w-52"
 						>
 							<li className="text-gray-400">
 								<a>Menu</a>

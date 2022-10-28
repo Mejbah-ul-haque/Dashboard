@@ -1,16 +1,19 @@
 import { Route, Routes } from 'react-router-dom';
-import Dashboard from './conponents/Dashboard/Dashboard';
-import Sidebar from './conponents/Sidebar';
+import Dashboards from './conponents/Layout/Dashboards';
+import Layout from './conponents/Layout/Layout';
+// import Header from './conponents/Shared';
 
 
 
 
 function App() {
   return (
-    <div className="w-full min-h-screen bg-white">
-      <Sidebar />
+    <div className="w-full min-h-screen bg-[#eff1f6]">
+      {/* <Header /> */}
       <Routes>
-        <Route path="/" element={<Dashboard></Dashboard>}></Route>
+        <Route path="/" element={<Layout></Layout>}>
+          <Route index element={<Dashboards />}></Route>
+        </Route>
         
       </Routes>
         
