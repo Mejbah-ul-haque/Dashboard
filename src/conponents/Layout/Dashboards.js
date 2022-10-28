@@ -14,12 +14,9 @@ const Dashboards = () => {
 				<div className=" main-part   w-100 lg:w-3/4">
           <RevenueCards></RevenueCards>
 					<Overview></Overview>
-					
-					<div className="bg-blue-900 w-100 h-48 my-5">
-						
-					</div>
-					<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-						<div className=" h-64 w"><Activity></Activity></div>
+				
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5">
+						<div className=" drop-shadow-lg bg-white rounded-xl"><Activity></Activity></div>
 						<div className="bg-green-500 h-64 w"></div>
 						<div className="bg-green-500 h-64 w"></div>
 					</div>

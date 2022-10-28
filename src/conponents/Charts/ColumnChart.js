@@ -156,19 +156,49 @@ const ColumnChart = () => {
 						<p>
 							Sort By: <span className="text-slate-400 mr-2">Yearly</span>{" "}
 						</p>
-						<p className="pt-2">
+						<p className="pt-0">
 							<MdKeyboardArrowDown />
 						</p>
 					</label>
 					<ul
 						tabIndex={0}
-						className="dropdown-content menu p-2 drop-shadow-lg bg-base-100 rounded-box w-[130px]"
+						className="dropdown-content menu p-2 drop-shadow-lg bg-base-100 rounded-box w-[140px]"
 					>
 						<li>
-							<a>Item 1</a>
+							<a>January</a>
 						</li>
 						<li>
-							<a>Item 2</a>
+							<a>February</a>
+						</li>
+						<li>
+							<a>March</a>
+						</li>
+						<li>
+							<a>April</a>
+						</li>
+						<li>
+							<a>May</a>
+						</li>
+						<li>
+							<a>June</a>
+						</li>
+						<li>
+							<a>July</a>
+						</li>
+						<li>
+							<a>August</a>
+						</li>
+						<li>
+							<a>September</a>
+						</li>
+						<li>
+							<a>October</a>
+						</li>
+						<li>
+							<a>November</a>
+						</li>
+						<li>
+							<a>December</a>
 						</li>
 					</ul>
 				</div>
