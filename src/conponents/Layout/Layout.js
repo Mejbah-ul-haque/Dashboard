@@ -48,7 +48,7 @@ const Layout = () => {
 									<Link to="/">Dashboard</Link>
 								</p>
 							</div>
-							
+
 							<button className="">
 								<MdDoubleArrow />
 							</button>
@@ -65,6 +65,7 @@ const Layout = () => {
 							</li>
 						</ul>
 					</li>
+	
 					<li>
 						<h2 className=" text-gray-600 leading-3">Applications</h2>
 					</li>

@@ -1,10 +1,11 @@
 import React from "react";
+import ColumnChart from "./ColumnChart";
 
 const Overview = () => {
 	return (
-		<div className="grid grid-cols-1 md:grid-cols-4 bg-white rounded-xl gap-5 mt-5">
-			<div className="   pl-3">
-				<h2 className="font-bold">
+		<div className="grid grid-cols-1 md:grid-cols-4 bg-white rounded-xl gap-5 mt-5 drop-shadow-lg p-3">
+			<div className=" ">
+				<h2 className="font-bold text-center md:text-left">
 					<small>Overview</small>
 				</h2>
 				<div className="mt-3">
@@ -18,7 +19,7 @@ const Overview = () => {
 						</p>
 					</div>
 				</div>
-				<div className="">
+				<div className="mt-5">
 					<table class="  mx-auto">
 						
 						<tbody>
@@ -57,7 +58,9 @@ const Overview = () => {
 					</table>
 				</div>
 			</div>
-			<div className="bg-blue-300 h-48 col-span-3"></div>
+			<div className=" col-span-3">
+        <ColumnChart></ColumnChart>
+      </div>
 		</div>
 	);
 };
