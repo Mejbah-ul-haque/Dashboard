@@ -33,7 +33,7 @@ const Layout = () => {
 			</div>
 			<div className="drawer-side">
 				<label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
-				<ul className="menu overflow-y-auto w-48 text-base-content bg-gray-900">
+				<ul className="menu overflow-y-auto w-48 text-base-content bg-[#04081e]">
 					{/* <!-- Sidebar content here --> */}
 					<li className="text-gray-400">
 						<a>Menu</a>

@@ -29,7 +29,7 @@ import {
 export default function Header() {
 	return (
 		<>
-			<div className="navbar bg-white">
+			<div className="navbar">
 				<div className="navbar-start">
 					{/* <a className="btn btn-ghost normal-case text-xl text-white">FetPeo Inc</a> */}
 					<div className="dropdown">
@@ -54,7 +54,7 @@ export default function Header() {
 										<p className=" mr-2">
 											<MdOutlineDashboard />
 										</p>
-										<p class="text-sm leading-5  uppercase ">Dashboard</p>
+										<p class="text-sm leading-5 uppercase">Dashboard</p>
 									</div>
 									<span className="">
 										<MdDoubleArrow />
@@ -405,8 +405,8 @@ export default function Header() {
 							</li>
 						</ul>
 					</div>
-					<a className="text-center text-black p-5 lg:ml-[250px]">
-						<span className="py-1 px-3 uppercase">Dashboard</span>
+					<a className="text-center text-black p-5">
+						<span className="py-1 px-3 uppercase font-bold">Dashboard</span>
 					</a>
 				</div>
 

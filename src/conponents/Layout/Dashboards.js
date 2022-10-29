@@ -11,7 +11,7 @@ import OrderState from "./OrderState";
 
 const Dashboards = () => {
 	return (
-		<div className=" mt-8">
+		<div className="">
 
 			<div className="lg:flex gap-5 md:flex-row-reverse">
 				<div className="sidebar-profile bg-base-100 md:hidden lg:block drop-shadow-lg rounded-xl w-100  mt-5 lg:mt-0 lg:w-1/4">
