@@ -154,9 +154,9 @@ const ColumnChart = () => {
 			<div className="text-right">
 				<div className="dropdown">
 					<label tabIndex={0} className="flex items-center m-1">
-						<p>
+						<div>
 							Sort By: <span className="text-slate-400 mr-2">Yearly</span>{" "}
-						</p>
+						</div>
 						<p className="pt-0">
 							<MdKeyboardArrowDown />
 						</p>

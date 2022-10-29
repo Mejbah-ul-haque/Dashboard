@@ -11,7 +11,7 @@ const PieState = () => {
 				enabled: true,
 				color: "#fff",
 				top: -1,
-				left: 3,
+				left: 1,
 				blur: 3,
 				opacity: 0.2,
 			},
@@ -55,12 +55,12 @@ const PieState = () => {
 	return (
 		<div className="p-3">
 			<h2 className="font-bold">Order Stats</h2>
-			<div className="pr-2">
+			<div className="pr-2 mt-10">
 				<ReactApexChart
 					options={options}
 					series={series}
 					type="donut"
-					width={280}
+					width={250}
 				/>
 			</div>
 		</div>

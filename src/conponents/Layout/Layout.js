@@ -16,6 +16,7 @@ import {
 import { RiContactsLine, RiProjectorLine } from "react-icons/ri";
 import { TbFileInvoice } from "react-icons/tb";
 import { FiBox } from "react-icons/fi";
+import { HiChevronDown } from "react-icons/hi";
 import { Link, Outlet } from "react-router-dom";
 import Header from "../Shared";
 
@@ -34,70 +35,44 @@ const Layout = () => {
 			<div className="drawer-side">
 				<label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
 				<ul className="menu overflow-y-auto w-48 text-base-content bg-[#04081e]">
-					{/* <!-- Sidebar content here --> */}
 					<li className="text-gray-400">
 						<a>Menu</a>
 					</li>
-					<li className="hover:text-white focus:text-white text-white">
-						<a className="justify-between">
-							<div className="flex justify-center items-center">
-								<p className=" mr-2">
+					<div tabIndex={0} className="collapse collapse-arrow">
+						<div className="collapse-title text-white">
+							<p className="flex justify-center items-center">
 									<MdOutlineDashboard />
-								</p>
-								<p class="text-sm leading-3">
+								<p class="text-sm leading-3 ml-2">
 									<Link to="/">Dashboard</Link>
 								</p>
-							</div>
+							</p>
+						</div>
+						<div className="collapse-content">
+							<p className="hover:text-white focus:text-white text-gray-400 cursor-pointer pl-10 py-0"><small>Ecommerce</small></p>
+							<p className="hover:text-white focus:text-white text-gray-400 cursor-pointer pl-10 py-0"><small>Sass</small></p>
+							<p className="hover:text-white focus:text-white text-gray-400 cursor-pointer pl-10 py-0"><small>Crypto</small></p>
+						</div>
+					</div>
 
-							<button className="">
-								<MdDoubleArrow />
-							</button>
-						</a>
-						<ul className="p-2 bg-slate-500 ">
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Ecommerce</a>
-							</li>
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Sass</a>
-							</li>
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Crypto</a>
-							</li>
-						</ul>
-					</li>
-	
 					<li>
 						<h2 className=" text-gray-600 leading-3">Applications</h2>
 					</li>
+
 					<li
-						tabIndex={0}
 						className="hover:text-white focus:text-white text-gray-400"
 					>
-						<a className="justify-between">
+						<a className="flex justify-between">
 							<div className="flex justify-center items-center">
-								<p className=" mr-2">
 									<BsFillCalendar2WeekFill />
-								</p>
-								<p class="text-sm leading-3">Calendar</p>
+								<p class="text-sm leading-3 ml-2">Calendar</p>
 							</div>
 							<span className="">
-								<MdDoubleArrow />
+								<HiChevronDown />
 							</span>
 						</a>
-						<ul className="p-2 bg-slate-500">
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Ecommerce</a>
-							</li>
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Sass</a>
-							</li>
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Crypto</a>
-							</li>
-						</ul>
+						
 					</li>
 					<li
-						tabIndex={0}
 						className="hover:text-white focus:text-white text-gray-400"
 					>
 						<a className="justify-between">
@@ -108,14 +83,14 @@ const Layout = () => {
 								<p class="text-sm leading-3">Chat</p>
 							</div>
 							<p>
-								<span className="text-red-700 bg-red-100 rounded-full px-2">
+								<small className="text-red-700 bg-red-100 rounded-full px-2">
 									hot
-								</span>
+								</small>
 							</p>
 						</a>
 					</li>
 					<li
-						tabIndex={0}
+
 						className="hover:text-white focus:text-white text-gray-400"
 					>
 						<a className="justify-between">
@@ -126,23 +101,11 @@ const Layout = () => {
 								<p class="text-sm leading-3">File Manager</p>
 							</div>
 							<span className="">
-								<MdDoubleArrow />
+								<HiChevronDown />
 							</span>
 						</a>
-						<ul className="p-2 bg-slate-500">
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Ecommerce</a>
-							</li>
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Sass</a>
-							</li>
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Crypto</a>
-							</li>
-						</ul>
 					</li>
 					<li
-						tabIndex={0}
 						className="hover:text-white focus:text-white text-gray-400"
 					>
 						<a className="justify-between">
@@ -153,7 +116,7 @@ const Layout = () => {
 								<p class="text-sm leading-3">Ecommerce</p>
 							</div>
 							<span className="">
-								<MdDoubleArrow />
+								<HiChevronDown />
 							</span>
 						</a>
 						<ul className="p-2 bg-slate-500">
@@ -169,7 +132,6 @@ const Layout = () => {
 						</ul>
 					</li>
 					<li
-						tabIndex={0}
 						className="hover:text-white focus:text-white text-gray-400"
 					>
 						<a className="justify-between">
@@ -180,23 +142,11 @@ const Layout = () => {
 								<p class="text-sm leading-3">Email</p>
 							</div>
 							<span className="">
-								<MdDoubleArrow />
+								<HiChevronDown />
 							</span>
 						</a>
-						<ul className="p-2 bg-slate-500">
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Ecommerce</a>
-							</li>
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Sass</a>
-							</li>
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Crypto</a>
-							</li>
-						</ul>
 					</li>
 					<li
-						tabIndex={0}
 						className="hover:text-white focus:text-white text-gray-400"
 					>
 						<a className="justify-between">
@@ -207,23 +157,11 @@ const Layout = () => {
 								<p class="text-sm leading-3">Invoices</p>
 							</div>
 							<span className="">
-								<MdDoubleArrow />
+								<HiChevronDown />
 							</span>
 						</a>
-						<ul className="p-2 bg-slate-500">
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Ecommerce</a>
-							</li>
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Sass</a>
-							</li>
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Crypto</a>
-							</li>
-						</ul>
 					</li>
 					<li
-						tabIndex={0}
 						className="hover:text-white focus:text-white text-gray-400"
 					>
 						<a className="justify-between">
@@ -234,23 +172,11 @@ const Layout = () => {
 								<p class="text-sm leading-3">Projects</p>
 							</div>
 							<span className="">
-								<MdDoubleArrow />
+								<HiChevronDown />
 							</span>
 						</a>
-						<ul className="p-2 bg-slate-500">
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Ecommerce</a>
-							</li>
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Sass</a>
-							</li>
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Crypto</a>
-							</li>
-						</ul>
 					</li>
 					<li
-						tabIndex={0}
 						className="hover:text-white focus:text-white text-gray-400"
 					>
 						<a className="justify-between">
@@ -261,29 +187,17 @@ const Layout = () => {
 								<p class="text-sm leading-3">Contacts</p>
 							</div>
 							<span className="">
-								<MdDoubleArrow />
+								<HiChevronDown />
 							</span>
 						</a>
-						<ul className="p-2 bg-slate-500">
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Ecommerce</a>
-							</li>
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Sass</a>
-							</li>
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Crypto</a>
-							</li>
-						</ul>
 					</li>
 					<li>
-						<h2 className="text-gray-600 leading-3">LAYOUTS</h2>
+						<small className="text-gray-700 leading-3 font-bold">LAYOUTS</small>
 					</li>
 					<li>
-						<h2 className="text-gray-600 leading-3">PAGES</h2>
+						<small className="text-gray-700 leading-3 font-bold">PAGES</small>
 					</li>
 					<li
-						tabIndex={0}
 						className="hover:text-white focus:text-white text-gray-400"
 					>
 						<a className="justify-between">
@@ -294,22 +208,11 @@ const Layout = () => {
 								<p class="text-sm leading-3 ">Authentication</p>
 							</div>
 							<p>
-								<span className="text-white bg-blue-500 rounded-full px-2">
+								<small className="text-white bg-blue-500 rounded-full px-2">
 									8
-								</span>
+								</small>
 							</p>
 						</a>
-						<ul className="p-2 bg-slate-500">
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Ecommerce</a>
-							</li>
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Sass</a>
-							</li>
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Crypto</a>
-							</li>
-						</ul>
 					</li>
 					<li
 						tabIndex={0}
@@ -323,26 +226,14 @@ const Layout = () => {
 								<p class="text-sm leading-5">Utility</p>
 							</div>
 							<span className="">
-								<MdDoubleArrow />
+								<HiChevronDown />
 							</span>
 						</a>
-						<ul className="p-2 bg-slate-500">
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Ecommerce</a>
-							</li>
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Sass</a>
-							</li>
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Crypto</a>
-							</li>
-						</ul>
 					</li>
 					<li>
-						<h2 className="text-gray-600 uppercase">Components</h2>
+						<small className="text-gray-700 uppercase font-bold">Components</small>
 					</li>
 					<li
-						tabIndex={0}
 						className="hover:text-white focus:text-white text-gray-400"
 					>
 						<a className="justify-between">
@@ -353,23 +244,11 @@ const Layout = () => {
 								<p class="text-sm leading-2">UI Elements</p>
 							</div>
 							<span className="">
-								<MdDoubleArrow />
+								<HiChevronDown />
 							</span>
 						</a>
-						<ul className="p-2 bg-slate-500">
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Ecommerce</a>
-							</li>
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Sass</a>
-							</li>
-							<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
-								<a>Crypto</a>
-							</li>
-						</ul>
 					</li>
 					<li
-						tabIndex={0}
 						className="hover:text-white focus:text-white text-gray-400"
 					>
 						<a className="justify-between">
@@ -380,7 +259,7 @@ const Layout = () => {
 								<p class="text-sm leading-2">Forms</p>
 							</div>
 							<span className="">
-								<MdDoubleArrow />
+								<HiChevronDown />
 							</span>
 						</a>
 						<ul className="p-2 bg-slate-500">
