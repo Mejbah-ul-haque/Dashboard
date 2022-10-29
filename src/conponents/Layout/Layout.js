@@ -41,16 +41,22 @@ const Layout = () => {
 					<div tabIndex={0} className="collapse collapse-arrow">
 						<div className="collapse-title text-white">
 							<p className="flex justify-center items-center">
-									<MdOutlineDashboard />
+								<MdOutlineDashboard />
 								<p class="text-sm leading-3 ml-2">
 									<Link to="/">Dashboard</Link>
 								</p>
 							</p>
 						</div>
 						<div className="collapse-content">
-							<p className="hover:text-white focus:text-white text-gray-400 cursor-pointer pl-10 py-0"><small>Ecommerce</small></p>
-							<p className="hover:text-white focus:text-white text-gray-400 cursor-pointer pl-10 py-0"><small>Sass</small></p>
-							<p className="hover:text-white focus:text-white text-gray-400 cursor-pointer pl-10 py-0"><small>Crypto</small></p>
+							<p className="hover:text-white focus:text-white text-gray-400 cursor-pointer pl-10 py-0">
+								<small>Ecommerce</small>
+							</p>
+							<p className="hover:text-white focus:text-white text-gray-400 cursor-pointer pl-10 py-0">
+								<small>Sass</small>
+							</p>
+							<p className="hover:text-white focus:text-white text-gray-400 cursor-pointer pl-10 py-0">
+								<small>Crypto</small>
+							</p>
 						</div>
 					</div>
 
@@ -58,23 +64,18 @@ const Layout = () => {
 						<h2 className=" text-gray-600 leading-3">Applications</h2>
 					</li>
 
-					<li
-						className="hover:text-white focus:text-white text-gray-400"
-					>
+					<li className="hover:text-white focus:text-white text-gray-400">
 						<a className="flex justify-between">
 							<div className="flex justify-center items-center">
-									<BsFillCalendar2WeekFill />
+								<BsFillCalendar2WeekFill />
 								<p class="text-sm leading-3 ml-2">Calendar</p>
 							</div>
 							<span className="">
 								<HiChevronDown />
 							</span>
 						</a>
-						
 					</li>
-					<li
-						className="hover:text-white focus:text-white text-gray-400"
-					>
+					<li className="hover:text-white focus:text-white text-gray-400">
 						<a className="justify-between">
 							<div className="flex justify-center items-center">
 								<p className=" mr-2">
@@ -89,10 +90,7 @@ const Layout = () => {
 							</p>
 						</a>
 					</li>
-					<li
-
-						className="hover:text-white focus:text-white text-gray-400"
-					>
+					<li className="hover:text-white focus:text-white text-gray-400">
 						<a className="justify-between">
 							<div className="flex justify-center items-center">
 								<p className=" mr-2">
@@ -105,9 +103,7 @@ const Layout = () => {
 							</span>
 						</a>
 					</li>
-					<li
-						className="hover:text-white focus:text-white text-gray-400"
-					>
+					<li className="hover:text-white focus:text-white text-gray-400">
 						<a className="justify-between">
 							<div className="flex justify-center items-center">
 								<p className=" mr-2">
@@ -131,9 +127,7 @@ const Layout = () => {
 							</li>
 						</ul>
 					</li>
-					<li
-						className="hover:text-white focus:text-white text-gray-400"
-					>
+					<li className="hover:text-white focus:text-white text-gray-400">
 						<a className="justify-between">
 							<div className="flex justify-center items-center">
 								<p className=" mr-2">
@@ -146,9 +140,7 @@ const Layout = () => {
 							</span>
 						</a>
 					</li>
-					<li
-						className="hover:text-white focus:text-white text-gray-400"
-					>
+					<li className="hover:text-white focus:text-white text-gray-400">
 						<a className="justify-between">
 							<div className="flex justify-center items-center">
 								<p className=" mr-2">
@@ -161,9 +153,7 @@ const Layout = () => {
 							</span>
 						</a>
 					</li>
-					<li
-						className="hover:text-white focus:text-white text-gray-400"
-					>
+					<li className="hover:text-white focus:text-white text-gray-400">
 						<a className="justify-between">
 							<div className="flex justify-center items-center">
 								<p className=" mr-2">
@@ -176,9 +166,7 @@ const Layout = () => {
 							</span>
 						</a>
 					</li>
-					<li
-						className="hover:text-white focus:text-white text-gray-400"
-					>
+					<li className="hover:text-white focus:text-white text-gray-400">
 						<a className="justify-between">
 							<div className="flex justify-center items-center">
 								<p className=" mr-2">
@@ -197,9 +185,7 @@ const Layout = () => {
 					<li>
 						<small className="text-gray-700 leading-3 font-bold">PAGES</small>
 					</li>
-					<li
-						className="hover:text-white focus:text-white text-gray-400"
-					>
+					<li className="hover:text-white focus:text-white text-gray-400">
 						<a className="justify-between">
 							<div className="flex justify-center items-center">
 								<p className=" mr-2">
@@ -231,11 +217,11 @@ const Layout = () => {
 						</a>
 					</li>
 					<li>
-						<small className="text-gray-700 uppercase font-bold">Components</small>
+						<small className="text-gray-700 uppercase font-bold">
+							Components
+						</small>
 					</li>
-					<li
-						className="hover:text-white focus:text-white text-gray-400"
-					>
+					<li className="hover:text-white focus:text-white text-gray-400">
 						<a className="justify-between">
 							<div className="flex justify-center items-center">
 								<p className=" mr-2">
@@ -248,9 +234,7 @@ const Layout = () => {
 							</span>
 						</a>
 					</li>
-					<li
-						className="hover:text-white focus:text-white text-gray-400"
-					>
+					<li className="hover:text-white focus:text-white text-gray-400">
 						<a className="justify-between">
 							<div className="flex justify-center items-center">
 								<p className=" mr-2">

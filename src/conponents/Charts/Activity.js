@@ -35,7 +35,7 @@ const Activity = () => {
 		<div className="p-2">
 			<div>
 				<div className="flex justify-between">
-					<div>User Activity</div>
+					<div className="font-bold">User Activity</div>
 					<div className="dropdown">
 						<label tabIndex={0} className="flex items-center m-1">
 							<p>

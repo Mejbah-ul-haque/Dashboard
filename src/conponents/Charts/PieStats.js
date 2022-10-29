@@ -5,14 +5,14 @@ const PieState = () => {
 	const series = [1000, 365, 150];
 	const options = {
 		chart: {
-			width: 380,
+			width: 350,
 			type: "donut",
 			dropShadow: {
 				enabled: true,
 				color: "#fff",
 				top: -1,
 				left: 1,
-				blur: 3,
+				blur: 1,
 				opacity: 0.2,
 			},
 		},
@@ -31,9 +31,7 @@ const PieState = () => {
 			type: "gradient",
 		},
 		legend: {
-			formatter: function (val, opts) {
-				return val + " - " + opts.w.globals.series[opts.seriesIndex];
-			},
+			position: "bottom",
 		},
 		title: {
 			text: "",
@@ -53,14 +51,14 @@ const PieState = () => {
 		],
 	};
 	return (
-		<div className="p-3">
-			<h2 className="font-bold">Order Stats</h2>
-			<div className="pr-2 mt-10">
+		<div className="">
+			<h2 className="font-bold p-3">Order Stats</h2>
+			<div className="">
 				<ReactApexChart
 					options={options}
 					series={series}
 					type="donut"
-					width={250}
+					width={300}
 				/>
 			</div>
 		</div>
