@@ -4,6 +4,7 @@ import Activity from "../Charts/Activity";
 import Overview from "../Charts/Overview";
 import PieStats from "../Charts/PieStats";
 import Products from "../Products/Products";
+import Profile from "../Profile/Profile";
 
 import RevenueCards from "../RevenueCard/RevenueCards";
 import OrderState from "./OrderState";
@@ -13,8 +14,8 @@ const Dashboards = () => {
 		<div className=" mt-8">
 
 			<div className="lg:flex gap-5 md:flex-row-reverse">
-				<div className="sidebar-profile bg-yellow-100 md:hidden lg:block w-100 h-[600px] mt-5 lg:mt-0 lg:w-1/4">
-					<h2>Profile</h2>
+				<div className="sidebar-profile bg-base-100 md:hidden lg:block drop-shadow-lg rounded-xl w-100  mt-5 lg:mt-0 lg:w-1/4">
+					<Profile></Profile>
 				</div>
 				<div className=" main-part   w-100 lg:w-3/4">
           <RevenueCards></RevenueCards>
