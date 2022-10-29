@@ -10,7 +10,7 @@ import { RiProjectorLine, RiContactsLine } from "react-icons/ri";
 import { TbFileInvoice } from "react-icons/tb";
 import { BiLayer } from "react-icons/bi";
 import { VscBellDot } from "react-icons/vsc";
-import { HiOutlineMenuAlt1 } from "react-icons/hi";
+import { HiOutlineMenuAlt1, HiChevronRight } from "react-icons/hi";
 import { FiSettings, FiBox } from "react-icons/fi";
 import { GrProjects } from "react-icons/gr";
 import {
@@ -40,7 +40,7 @@ export default function Header() {
 						</label>
 						<ul
 							tabIndex={0}
-							className="menu menu-compact dropdown-content mt-3 p-3 shadow text-white bg-gray-900 rounded-box w-52"
+							className="menu menu-compact dropdown-content mt-3 p-3 shadow text-white bg-[#12013d] rounded-box w-52"
 						>
 							<li className="text-gray-400">
 								<a>Menu</a>
@@ -54,26 +54,26 @@ export default function Header() {
 										<p className=" mr-2">
 											<MdOutlineDashboard />
 										</p>
-										<p class="text-sm leading-5 uppercase">Dashboard</p>
+										<p class="text-sm leading-5">Dashboard</p>
 									</div>
 									<span className="">
-										<MdDoubleArrow />
+										<HiChevronRight />
 									</span>
 								</a>
 								<ul className="p-2 bg-slate-500">
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d] focus:text-white text-gray-400">
 										<a>Ecommerce</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d] focus:text-white text-gray-400">
 										<a>Sass</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d] focus:text-white text-gray-400">
 										<a>Crypto</a>
 									</li>
 								</ul>
 							</li>
 							<li>
-								<h2 className="mb-4 text-gray-600 mt-5">Applications</h2>
+								<h2 className=" text-gray-600">Applications</h2>
 							</li>
 							<li
 								tabIndex={0}
@@ -84,20 +84,20 @@ export default function Header() {
 										<p className=" mr-2">
 											<BsFillCalendar2WeekFill />
 										</p>
-										<p class="text-sm leading-5  uppercase ">Calendar</p>
+										<p class="text-sm leading-5">Calendar</p>
 									</div>
 									<span className="">
-										<MdDoubleArrow />
+										<HiChevronRight />
 									</span>
 								</a>
 								<ul className="p-2 bg-slate-500">
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Ecommerce</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Sass</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Crypto</a>
 									</li>
 								</ul>
@@ -111,12 +111,12 @@ export default function Header() {
 										<p className=" mr-2">
 											<BsChatDots />
 										</p>
-										<p class="text-sm leading-5  uppercase ">Chat</p>
+										<p class="text-sm leading-5">Chat</p>
 									</div>
 									<p>
-										<span className="text-red-700 bg-red-100 rounded-full px-2">
+										<small className="text-red-700 bg-red-100 rounded-full px-2">
 											hot
-										</span>
+										</small>
 									</p>
 								</a>
 							</li>
@@ -129,20 +129,20 @@ export default function Header() {
 										<p className=" mr-2">
 											<BsFillFileEarmarkFill />
 										</p>
-										<p class="text-sm leading-5  uppercase ">File Manager</p>
+										<p class="text-sm leading-5">File Manager</p>
 									</div>
 									<span className="">
-										<MdDoubleArrow />
+										<HiChevronRight />
 									</span>
 								</a>
 								<ul className="p-2 bg-slate-500">
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Ecommerce</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Sass</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Crypto</a>
 									</li>
 								</ul>
@@ -156,20 +156,20 @@ export default function Header() {
 										<p className=" mr-2">
 											<MdBusinessCenter />
 										</p>
-										<p class="text-sm leading-5  uppercase ">Ecommerce</p>
+										<p class="text-sm leading-5">Ecommerce</p>
 									</div>
 									<span className="">
-										<MdDoubleArrow />
+										<HiChevronRight />
 									</span>
 								</a>
 								<ul className="p-2 bg-slate-500">
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Ecommerce</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Sass</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Crypto</a>
 									</li>
 								</ul>
@@ -183,20 +183,20 @@ export default function Header() {
 										<p className=" mr-2">
 											<AiOutlineMail />
 										</p>
-										<p class="text-sm leading-5  uppercase ">Email</p>
+										<p class="text-sm leading-5">Email</p>
 									</div>
 									<span className="">
-										<MdDoubleArrow />
+										<HiChevronRight />
 									</span>
 								</a>
 								<ul className="p-2 bg-slate-500">
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Ecommerce</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Sass</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Crypto</a>
 									</li>
 								</ul>
@@ -210,20 +210,20 @@ export default function Header() {
 										<p className=" mr-2">
 											<TbFileInvoice />
 										</p>
-										<p class="text-sm leading-5  uppercase ">Invoices</p>
+										<p class="text-sm leading-5">Invoices</p>
 									</div>
 									<span className="">
-										<MdDoubleArrow />
+										<HiChevronRight />
 									</span>
 								</a>
 								<ul className="p-2 bg-slate-500">
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Ecommerce</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Sass</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Crypto</a>
 									</li>
 								</ul>
@@ -237,20 +237,20 @@ export default function Header() {
 										<p className=" mr-2">
 											<RiProjectorLine />
 										</p>
-										<p class="text-sm leading-5  uppercase ">Projects</p>
+										<p class="text-sm leading-5 ">Projects</p>
 									</div>
 									<span className="">
-										<MdDoubleArrow />
+										<HiChevronRight />
 									</span>
 								</a>
 								<ul className="p-2 bg-slate-500">
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Ecommerce</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Sass</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Crypto</a>
 									</li>
 								</ul>
@@ -264,29 +264,29 @@ export default function Header() {
 										<p className=" mr-2">
 											<BsWifi />
 										</p>
-										<p class="text-sm leading-5  uppercase ">Contacts</p>
+										<p class="text-sm leading-5">Contacts</p>
 									</div>
 									<span className="">
-										<MdDoubleArrow />
+										<HiChevronRight />
 									</span>
 								</a>
 								<ul className="p-2 bg-slate-500">
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Ecommerce</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Sass</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Crypto</a>
 									</li>
 								</ul>
 							</li>
 							<li>
-								<h2 className="mb-4 text-gray-600 mt-5">LAYOUTS</h2>
+								<small className=" text-gray-600">LAYOUTS</small>
 							</li>
 							<li>
-								<h2 className="mb-4 text-gray-600 mt-5">PAGES</h2>
+								<small className=" text-gray-600">PAGES</small>
 							</li>
 							<li
 								tabIndex={0}
@@ -300,19 +300,19 @@ export default function Header() {
 										<p class="text-sm leading-5 ">Authentication</p>
 									</div>
 									<p>
-										<span className="text-white bg-blue-500 rounded-full px-2">
+										<small className="text-white bg-blue-500 rounded-full px-2">
 											8
-										</span>
+										</small>
 									</p>
 								</a>
 								<ul className="p-2 bg-slate-500">
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Ecommerce</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Sass</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Crypto</a>
 									</li>
 								</ul>
@@ -329,17 +329,17 @@ export default function Header() {
 										<p class="text-sm leading-5">Utility</p>
 									</div>
 									<span className="">
-										<MdDoubleArrow />
+										<HiChevronRight />
 									</span>
 								</a>
 								<ul className="p-2 bg-slate-500">
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Ecommerce</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d] focus:text-white text-gray-400">
 										<a>Sass</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Crypto</a>
 									</li>
 								</ul>
@@ -361,17 +361,17 @@ export default function Header() {
 										<p class="text-sm leading-5">UI Elements</p>
 									</div>
 									<span className="">
-										<MdDoubleArrow />
+										<HiChevronRight />
 									</span>
 								</a>
 								<ul className="p-2 bg-slate-500">
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Ecommerce</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Sass</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Crypto</a>
 									</li>
 								</ul>
@@ -388,17 +388,17 @@ export default function Header() {
 										<p class="text-sm leading-5">Forms</p>
 									</div>
 									<span className="">
-										<MdDoubleArrow />
+										<HiChevronRight />
 									</span>
 								</a>
 								<ul className="p-2 bg-slate-500">
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Ecommerce</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d] focus:text-white text-gray-400">
 										<a>Sass</a>
 									</li>
-									<li className="hover:text-white hover:bg-gray-900 focus:text-white text-gray-400">
+									<li className="hover:text-white hover:bg-[#12013d]  focus:text-white text-gray-400">
 										<a>Crypto</a>
 									</li>
 								</ul>
@@ -416,7 +416,10 @@ export default function Header() {
 							<BsSearch />
 						</p>
 					</button>
-					<label tabIndex={0} className="btn btn-ghost hidden sm:block btn-circle avatar">
+					<label
+						tabIndex={0}
+						className="btn btn-ghost hidden sm:block btn-circle avatar"
+					>
 						<div className="w-10 h-6 mt-2">
 							<img src="https://i.ibb.co/nzMfnQN/us.png" />
 						</div>
@@ -426,7 +429,6 @@ export default function Header() {
 							<p className="">
 								<GrProjects />
 							</p>
-							
 						</div>
 					</button>
 					<button className="btn btn-ghost btn-circle text-xl text-black">
@@ -434,7 +436,9 @@ export default function Header() {
 							<p className="">
 								<VscBellDot />
 							</p>
-							<span className="badge badge-xs badge-secondary indicator-item">4</span>
+							<span className="badge badge-xs badge-secondary indicator-item">
+								4
+							</span>
 						</div>
 					</button>
 					<button className="btn btn-ghost hidden sm:block btn-circle text-xl text-black">
