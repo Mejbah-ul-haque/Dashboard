@@ -46,6 +46,7 @@ const ColumnChart = () => {
 		},
 		stroke: {
 			width: [1, 1, 4],
+      colors: ['transparent']
 		},
 		title: {
 			// text: 'XYZ - Stock Analysis (2009 - 2016)',
@@ -165,40 +166,19 @@ const ColumnChart = () => {
 						className="dropdown-content menu p-2 drop-shadow-lg bg-base-100 rounded-box w-[140px]"
 					>
 						<li>
-							<a>January</a>
+							<a>2022</a>
 						</li>
 						<li>
-							<a>February</a>
+							<a>2021</a>
 						</li>
 						<li>
-							<a>March</a>
+							<a>2020</a>
 						</li>
 						<li>
-							<a>April</a>
+							<a>2019</a>
 						</li>
 						<li>
-							<a>May</a>
-						</li>
-						<li>
-							<a>June</a>
-						</li>
-						<li>
-							<a>July</a>
-						</li>
-						<li>
-							<a>August</a>
-						</li>
-						<li>
-							<a>September</a>
-						</li>
-						<li>
-							<a>October</a>
-						</li>
-						<li>
-							<a>November</a>
-						</li>
-						<li>
-							<a>December</a>
+							<a>2018</a>
 						</li>
 					</ul>
 				</div>

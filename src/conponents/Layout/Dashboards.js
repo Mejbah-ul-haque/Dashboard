@@ -1,7 +1,12 @@
 import React from "react";
+
 import Activity from "../Charts/Activity";
 import Overview from "../Charts/Overview";
+import PieStats from "../Charts/PieStats";
+import Products from "../Products/Products";
+
 import RevenueCards from "../RevenueCard/RevenueCards";
+import OrderState from "./OrderState";
 
 const Dashboards = () => {
 	return (
@@ -17,8 +22,9 @@ const Dashboards = () => {
 				
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5">
 						<div className=" drop-shadow-lg bg-white rounded-xl"><Activity></Activity></div>
-						<div className="bg-green-500 h-64 w"></div>
-						<div className="bg-green-500 h-64 w"></div>
+						
+						<div className=" drop-shadow-lg bg-white rounded-xl block"><PieStats></PieStats></div>
+						<div className=" drop-shadow-lg bg-white rounded-xl"><Products></Products></div>
 					</div>
 				</div>
 			</div>
