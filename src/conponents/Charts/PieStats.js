@@ -5,16 +5,16 @@ const PieState = () => {
 	const series = [1000, 365, 150];
 	const options = {
 		chart: {
-			width: 480,
+			width: 380,
 			type: "donut",
 			dropShadow: {
 				enabled: true,
-				color: '#fff',
+				color: "#fff",
 				top: -1,
 				left: 3,
 				blur: 3,
-				opacity: 0.2
-			}
+				opacity: 0.2,
+			},
 		},
 		plotOptions: {
 			pie: {
@@ -25,8 +25,8 @@ const PieState = () => {
 		dataLabels: {
 			enabled: false,
 		},
-    labels: ["Completed", "Pending", "Cancel"],
-              
+		labels: ["Completed", "Pending", "Cancel"],
+
 		fill: {
 			type: "gradient",
 		},
@@ -55,11 +55,14 @@ const PieState = () => {
 	return (
 		<div className="p-3">
 			<h2 className="font-bold">Order Stats</h2>
-			<div className="">
-        
-      <ReactApexChart options={options} series={series} type="donut" width={400} />
-        
-      </div>
+			<div className="pr-2">
+				<ReactApexChart
+					options={options}
+					series={series}
+					type="donut"
+					width={280}
+				/>
+			</div>
 		</div>
 	);
 };
