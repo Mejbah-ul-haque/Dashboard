@@ -69,7 +69,7 @@ const Profile = () => {
 
 	return (
 		<div>
-			<div className="text-center mx-auto">
+			<div className="text-center mx-auto mb-5">
 				<div className=" ">
 					<div className="">
 						<div

@@ -8,7 +8,7 @@ const PieState = () => {
 			width: 480,
 			type: "donut",
 			dropShadow: {
-				enabled: false,
+				enabled: true,
 				color: '#fff',
 				top: -1,
 				left: 3,
@@ -55,9 +55,9 @@ const PieState = () => {
 	return (
 		<div className="p-3">
 			<h2 className="font-bold">Order Stats</h2>
-			<div>
+			<div className="">
         
-      <ReactApexChart options={options} series={series} type="donut" width={300} />
+      <ReactApexChart options={options} series={series} type="donut" width={400} />
         
       </div>
 		</div>

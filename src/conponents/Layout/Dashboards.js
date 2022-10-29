@@ -24,7 +24,7 @@ const Dashboards = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5">
 						<div className=" drop-shadow-lg bg-white rounded-xl"><Activity></Activity></div>
 						
-						<div className=" drop-shadow-lg bg-white rounded-xl block"><PieStats></PieStats></div>
+						<div className=" drop-shadow-lg bg-white rounded-xl"><PieStats></PieStats></div>
 						<div className=" drop-shadow-lg bg-white rounded-xl"><Products></Products></div>
 					</div>
 				</div>
