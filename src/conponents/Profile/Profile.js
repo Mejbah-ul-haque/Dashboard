@@ -1,6 +1,7 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
+import ProProto from "../../images/pro_pic.png";
 // import background from "../../images/sunset-3689760_1280.png"
 
 const Profile = () => {
@@ -82,7 +83,7 @@ const Profile = () => {
 
 					<img
 						className="w-24 rounded-full border-4 border-base-100 mx-auto mt-[-50px]"
-						src="https://i.ibb.co/9c5Bjmm/pro-pic.png"
+						src={ProProto}
 					/>
 					<h2 className="font-bold">Jennifer Bennett</h2>
 					<p>

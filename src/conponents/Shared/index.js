@@ -25,6 +25,8 @@ import {
 	BsWifi,
 	BsSearch,
 } from "react-icons/bs";
+import ProPhoto from "../../images/pro_pic.png";
+import UsFlag from "../../images/us.png";
 
 export default function Header() {
 	return (
@@ -421,7 +423,7 @@ export default function Header() {
 						className="btn btn-ghost hidden sm:block btn-circle avatar"
 					>
 						<div className="w-10 h-6 mt-2">
-							<img src="https://i.ibb.co/nzMfnQN/us.png" />
+							<img src={UsFlag} />
 						</div>
 					</label>
 					<button className="btn btn-ghost  hidden sm:block btn-circle text-xl text-black">
@@ -450,7 +452,7 @@ export default function Header() {
 					</button>
 					<label tabIndex={0} className="btn btn-ghost btn-circle avatar">
 						<div className="w-10 rounded-full">
-							<img src="https://i.ibb.co/9c5Bjmm/pro-pic.png" />
+							<img src={ProPhoto} />
 						</div>
 					</label>
 				</div>
