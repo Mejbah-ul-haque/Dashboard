@@ -10,8 +10,8 @@ const RevenueCards = () => {
     {id : 3, name:'Customers', icon:<BsFillPeopleFill />, quantity: "45,254", percentage: "-1.04"}
   ]
   return (
-    <div>
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+    <div className=''>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
         {
           items.map((item) => (
             <RevenueCard key={item.id} item={item}></RevenueCard>

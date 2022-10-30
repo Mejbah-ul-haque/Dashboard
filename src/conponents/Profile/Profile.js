@@ -19,14 +19,14 @@ const Profile = () => {
 				startAngle: -90,
 				endAngle: 90,
 				track: {
-					background: "#e7e7e7",
+					background: "#fff",
 					strokeWidth: "97%",
 					margin: 5, // margin is in pixels
 					dropShadow: {
 						enabled: true,
 						top: 2,
 						left: 0,
-						color: "#999",
+						color: "#000",
 						opacity: 1,
 						blur: 2,
 					},
@@ -70,7 +70,7 @@ const Profile = () => {
 
 	return (
 		<div>
-			<div className="text-center mx-auto mb-5">
+			<div className="text-center mx-auto mb-5 bg-gray-900 text-gray-400">
 				<div className=" ">
 					<div className="">
 						<div
@@ -82,14 +82,14 @@ const Profile = () => {
 					</div>
 
 					<img
-						className="w-24 rounded-full border-4 border-base-100 mx-auto mt-[-50px]"
+						className="w-24 rounded-full border-8 border-gray-900 mx-auto mt-[-50px]"
 						src={ProProto}
 					/>
 					<h2 className="font-bold">Jennifer Bennett</h2>
 					<p>
 						<small>Product Designer</small>
 					</p>
-					<div className="flex justify-around mt-5 pb-5 border-b">
+					<div className="flex justify-around mt-5 pb-5 border-b-2 border-black">
 						<div>
 							<h2 className="font-bold">1,269</h2>
 							<p>
@@ -113,13 +113,13 @@ const Profile = () => {
 				<div>
 					<ReactApexChart options={options} series={series} type="radialBar" />
 				</div>
-				<div className="border-b">
+				<div className="border-b-2 border-black">
 					<h2 className="font-bold">$26,256</h2>
 					<p>
 						<small>Earning this Month</small>
 					</p>
 					<p className="my-3">
-						<span className="bg-green-100 text-green-600 rounded-full px-2 mr-5">
+						<span className="bg-gray-600 font-bold text-black rounded-full px-2 mr-5">
 							+2.65%
 						</span>
 						<small>From previous period</small>{" "}
@@ -128,7 +128,7 @@ const Profile = () => {
 				<div className="p-4 text-left">
 					<h2 className="font-bold text-left ">Recent Activity</h2>
 					<div className="flex mt-5">
-						<div className="bg-base-200 px-2 rounded-xl mr-5">
+						<div className="bg-gray-700 px-2 rounded-xl mr-5">
 							<h2 className="font-bold">12</h2>
               <p><small>Sep</small></p>
 						</div>
@@ -136,9 +136,18 @@ const Profile = () => {
 							<small>Responded to need "Volunteer Activities"</small>
 						</p>
 					</div>
-					<div className="flex mt-5">
-						<div className="bg-base-200 px-2 rounded-xl mr-5">
+					<div className="flex mt-5 2xl:hidden">
+						<div className="bg-gray-700 px-2 rounded-xl mr-5">
 							<h2 className="font-bold">11</h2>
+              <p><small>Sep</small></p>
+						</div>
+						<p>
+							<small>Everyone realizes would be desirable... <span className="text-blue-500">Read more</span></small>
+						</p>
+					</div>
+					<div className="flex mt-5 2xl:hidden">
+						<div className="bg-gray-700 px-2 rounded-xl mr-5">
+							<h2 className="font-bold">10</h2>
               <p><small>Sep</small></p>
 						</div>
 						<p>

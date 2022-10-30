@@ -31,7 +31,7 @@ import UsFlag from "../../images/us.png";
 export default function Header() {
 	return (
 		<>
-			<div className="navbar">
+			<div className="navbar pr-10 bg-gray-900 ml-5 my-5 rounded-l-xl">
 				<div className="navbar-start">
 					{/* <a className="btn btn-ghost normal-case text-xl text-white">FetPeo Inc</a> */}
 					<div className="dropdown">
@@ -42,7 +42,7 @@ export default function Header() {
 						</label>
 						<ul
 							tabIndex={0}
-							className="menu menu-compact dropdown-content mt-3 p-3 shadow text-white bg-[#12013d] rounded-box w-52"
+							className="menu menu-compact dropdown-content mt-3 p-3 shadow bg-gray-900 text-gray-200 rounded-box w-52"
 						>
 							<li className="text-gray-400">
 								<a>Menu</a>
@@ -407,13 +407,13 @@ export default function Header() {
 							</li>
 						</ul>
 					</div>
-					<a className="text-center text-black p-5">
+					<a className="text-center text-gray-200 p-5">
 						<span className="py-1 px-3 uppercase font-bold">Dashboard</span>
 					</a>
 				</div>
 
-				<div className="navbar-end">
-					<button className="btn btn-ghost hidden sm:block btn-circle text-black text-xl">
+				<div className="navbar-end gap-0">
+					<button className="btn btn-ghost hidden sm:block btn-circle text-gray-200 text-lg pl-5">
 						<p>
 							<BsSearch />
 						</p>
@@ -422,18 +422,19 @@ export default function Header() {
 						tabIndex={0}
 						className="btn btn-ghost hidden sm:block btn-circle avatar"
 					>
-						<div className="w-10 h-6 mt-2">
+						<div className="w-7 h-4 mt-4 ml-3">
 							<img src={UsFlag} />
 						</div>
 					</label>
-					<button className="btn btn-ghost  hidden sm:block btn-circle text-xl text-black">
+					<button className="btn btn-ghost hidden sm:block btn-circle text-md text-gray-400">
 						<div className="indicator">
 							<p className="">
-								<GrProjects />
+								<MdOutlineDashboard />
+								{/* <GrProjects /> */}
 							</p>
 						</div>
 					</button>
-					<button className="btn btn-ghost btn-circle text-xl text-black">
+					<button className="btn btn-ghost btn-circle text-xl text-gray-400 pt-2">
 						<div className="indicator">
 							<p className="">
 								<VscBellDot />
@@ -443,18 +444,18 @@ export default function Header() {
 							</span>
 						</div>
 					</button>
-					<button className="btn btn-ghost hidden sm:block btn-circle text-xl text-black">
+					<button className="btn btn-ghost hidden sm:block btn-circle text-lg text-gray-400">
 						<div className="indicator">
 							<p className="">
 								<FiSettings />
 							</p>
 						</div>
 					</button>
-					<label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-						<div className="w-10 rounded-full">
+					<div tabIndex={0} className="btn btn-ghost btn-circle avatar">
+						<div className="w-10 border-4 border-black rounded-full">
 							<img src={ProPhoto} />
 						</div>
-					</label>
+					</div>
 				</div>
 			</div>
 		</>

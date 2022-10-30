@@ -9,11 +9,11 @@ const PieState = () => {
 			type: "donut",
 			dropShadow: {
 				enabled: true,
-				color: "#fff",
+				color: "transparent",
 				top: -1,
 				left: 1,
 				blur: 1,
-				opacity: 0.2,
+				opacity: 0.7,
 			},
 		},
 		plotOptions: {
@@ -52,13 +52,13 @@ const PieState = () => {
 	};
 	return (
 		<div className="">
-			<h2 className="font-bold p-3">Order Stats</h2>
-			<div className="">
+			<h2 className="text-error uppercase tracking-[0.10em] p-4"><small>Order Stats</small></h2>
+			<div className="mt-5">
 				<ReactApexChart
 					options={options}
 					series={series}
 					type="donut"
-					width={300}
+					width={290}
 				/>
 			</div>
 		</div>

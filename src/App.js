@@ -8,7 +8,7 @@ import Layout from './conponents/Layout/Layout';
 
 function App() {
   return (
-    <div className="w-full min-h-screen bg-[#eff1f6]">
+    <div className="w-full min-h-screen bg-black">
       {/* <Header /> */}
       <Routes>
         <Route path="/" element={<Layout></Layout>}>

@@ -28,15 +28,15 @@ const Layout = () => {
 				<div>
 					<Header></Header>
 				</div>
-				<div className="lg:ml-8">
+				<div className="lg:ml-5">
 					<Outlet></Outlet>
 				</div>
 			</div>
 			<div className="drawer-side">
 				<label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
-				<ul className="menu overflow-y-auto w-48 text-base-content bg-[#12013d]">
-					<li className="text-gray-400">
-						<a>Menu</a>
+				<ul className="menu overflow-y-auto w-56 text-base-content bg-gray-900 px-2">
+					<li className="text-gray-500">
+						<a className="text-center mx-auto border-4 mt-[-10px] border-black rounded-full">Menu</a>
 					</li>
 					<div tabIndex={0} className="collapse collapse-arrow">
 						<div className="collapse-title text-white">
@@ -84,7 +84,7 @@ const Layout = () => {
 								<p class="text-sm leading-3">Chat</p>
 							</div>
 							<p>
-								<small className="text-red-700 bg-red-100 rounded-full px-2">
+								<small className="text-white bg-secondary rounded-full px-2">
 									hot
 								</small>
 							</p>

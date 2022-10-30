@@ -32,11 +32,11 @@ const Activity = () => {
       }}};
 
 	return (
-		<div className="p-2">
+		<div className="p-4 ">
 			<div>
 				<div className="flex justify-between">
-					<div className="font-bold">User Activity</div>
-					<div className="dropdown">
+					<div className="text-error uppercase tracking-[0.10em]"><small>User Activity</small></div>
+					<div className="dropdown z-50">
 						<label tabIndex={0} className="flex items-center m-1">
 							<p>
 								<span className="text-slate-400 mr-2">Weekly</span>{" "}
@@ -47,27 +47,27 @@ const Activity = () => {
 						</label>
 						<ul
 							tabIndex={0}
-							className="dropdown-content menu p-2 drop-shadow-lg bg-base-100 rounded-box w-[140px]"
+							className="dropdown-content menu p-2 drop-shadow-lg z-10 bg-gray-800 rounded-box w-[140px]"
 						>
-							<li>
+							<li className="border-b-2 border-black">
 								<a>Sat</a>
 							</li>
-							<li>
+							<li className="border-b-2 border-black">
 								<a>Sun</a>
 							</li>
-							<li>
+							<li className="border-b-2 border-black">
 								<a>Mon</a>
 							</li>
-							<li>
+							<li className="border-b-2 border-black">
 								<a>Tue</a>
 							</li>
-							<li>
+							<li className="border-b-2 border-black">
 								<a>Web</a>
 							</li>
-							<li>
+							<li className="border-b-2 border-black">
 								<a>Thu</a>
 							</li>
-							<li>
+							<li className="border-b-2 border-black">
 								<a>Fri</a>
 							</li>
 						</ul>
@@ -75,7 +75,7 @@ const Activity = () => {
 				</div>
         <div>
           <p className="text-slate-500"><small>This Month</small></p>
-          <h2 className="font-bold">16,543</h2>
+          <h2 className=" text-gray-400">16,543</h2>
         </div>
 			</div>
       <div>

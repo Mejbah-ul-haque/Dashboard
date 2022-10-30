@@ -46,7 +46,7 @@ const ColumnChart = () => {
 		},
 		stroke: {
 			width: [1, 1, 4],
-      colors: ['transparent']
+      colors: ['']
 		},
 		title: {
 			// text: 'XYZ - Stock Analysis (2009 - 2016)',
@@ -65,6 +65,7 @@ const ColumnChart = () => {
 				"Sep",
 				"Oct",
 			],
+			
 		},
 		yaxis: [
 			{
@@ -73,17 +74,17 @@ const ColumnChart = () => {
 				},
 				axisBorder: {
 					show: false,
-					color: "#008FFB",
+					color: "#666",
 				},
 				labels: {
 					style: {
-						colors: "#333333",
+						colors: "#666",
 					},
 				},
 				title: {
 					text: "",
 					style: {
-						color: "#008FFB",
+						color: "#yellow",
 					},
 				},
 				tooltip: {
@@ -152,10 +153,10 @@ const ColumnChart = () => {
 	return (
 		<div>
 			<div className="text-right">
-				<div className="dropdown">
+				<div className="dropdown bg-gray-900">
 					<label tabIndex={0} className="flex items-center m-1">
 						<div>
-							Sort By: <span className="text-slate-400 mr-2">Yearly</span>{" "}
+							Sort By: <span className="text-gray-400 mr-2">Yearly</span>{" "}
 						</div>
 						<p className="pt-0">
 							<MdKeyboardArrowDown />
@@ -163,21 +164,21 @@ const ColumnChart = () => {
 					</label>
 					<ul
 						tabIndex={0}
-						className="dropdown-content menu p-2 drop-shadow-lg bg-base-100 rounded-box w-[140px]"
+						className="dropdown-content menu p-2 drop-shadow-lg bg-gray-800 rounded-box w-[140px]"
 					>
-						<li>
+						<li className="border-b-2 border-black">
 							<a>2022</a>
 						</li>
-						<li>
+						<li className="border-b-2 border-black">
 							<a>2021</a>
 						</li>
-						<li>
+						<li className="border-b-2 border-black">
 							<a>2020</a>
 						</li>
-						<li>
+						<li className="border-b-2 border-black">
 							<a>2019</a>
 						</li>
-						<li>
+						<li className="border-b-2 border-black">
 							<a>2018</a>
 						</li>
 					</ul>

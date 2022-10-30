@@ -11,9 +11,9 @@ const Products = () => {
     {id: 4, name:"Pocket T-shirt", price: 27.5, quantity: "2.06k"},
   ]
 	return (
-		<div className="p-3">
+		<div className="p-4">
 			<div className="flex justify-between">
-				<h2 className="font-bold">Top Product</h2>
+				<h2 className="text-error uppercase"><small>Top Product</small></h2>
 				<div className="dropdown">
 					<label tabIndex={0} className="flex items-center m-1">
 						<p>
@@ -25,39 +25,39 @@ const Products = () => {
 					</label>
 					<ul
 						tabIndex={0}
-						className="dropdown-content menu p-2 drop-shadow-lg bg-base-100 rounded-box w-[140px]"
+						className="dropdown-content menu p-2 drop-shadow-lg bg-gray-800 rounded-box w-[140px]"
 					>
-						<li>
+						<li className="border-b-2 border-black">
 							<a>January</a>
 						</li>
-						<li>
+						<li className="border-b-2 border-black">
 							<a>February</a>
 						</li>
-						<li>
+						<li className="border-b-2 border-black">
 							<a>March</a>
 						</li>
-						<li>
+						<li className="border-b-2 border-black">
 							<a>April</a>
 						</li>
-						<li>
+						<li className="border-b-2 border-black">
 							<a>May</a>
 						</li>
-						<li>
+						<li className="border-b-2 border-black">
 							<a>June</a>
 						</li>
-						<li>
+						<li className="border-b-2 border-black">
 							<a>July</a>
 						</li>
-						<li>
+						<li className="border-b-2 border-black">
 							<a>August</a>
 						</li>
-						<li>
+						<li className="border-b-2 border-black">
 							<a>September</a>
 						</li>
-						<li>
+						<li className="border-b-2 border-black">
 							<a>October</a>
 						</li>
-						<li>
+						<li className="border-b-2 border-black">
 							<a>November</a>
 						</li>
 						<li>
