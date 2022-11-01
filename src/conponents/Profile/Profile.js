@@ -70,7 +70,7 @@ const Profile = () => {
 
 	return (
 		<div>
-			<div className="text-center mx-auto mb-5 bg-gray-900 text-gray-400">
+			<div className="text-center mx-auto  text-gray-400">
 				<div className=" ">
 					<div className="">
 						<div
@@ -136,7 +136,7 @@ const Profile = () => {
 							<small>Responded to need "Volunteer Activities"</small>
 						</p>
 					</div>
-					<div className="flex mt-5 2xl:hidden">
+					<div className="flex mt-5 3xl:hidden">
 						<div className="bg-gray-700 px-2 rounded-xl mr-5">
 							<h2 className="font-bold">11</h2>
               <p><small>Sep</small></p>

@@ -8,7 +8,7 @@ const PieState = () => {
 			width: 350,
 			type: "donut",
 			dropShadow: {
-				enabled: true,
+				enabled: false,
 				color: "transparent",
 				top: -1,
 				left: 1,
@@ -20,15 +20,18 @@ const PieState = () => {
 			pie: {
 				startAngle: -90,
 				endAngle: 270,
+				
 			},
 		},
 		dataLabels: {
 			enabled: false,
+			
 		},
 		labels: ["Completed", "Pending", "Cancel"],
 
 		fill: {
 			type: "gradient",
+			
 		},
 		legend: {
 			position: "bottom",
@@ -53,7 +56,7 @@ const PieState = () => {
 	return (
 		<div className="">
 			<h2 className="text-error uppercase tracking-[0.10em] p-4"><small>Order Stats</small></h2>
-			<div className="mt-5">
+			<div className="lg:mt-5">
 				<ReactApexChart
 					options={options}
 					series={series}

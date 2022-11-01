@@ -24,11 +24,11 @@ const Layout = () => {
 	return (
 		<div className="drawer drawer-mobile">
 			<input id="dashboard-sidebar" type="checkbox" className="drawer-toggle" />
-			<div className="drawer-content">
-				<div>
+			<div className="drawer-content mx-0 p-0">
+				<div className="">
 					<Header></Header>
 				</div>
-				<div className="lg:ml-5">
+				<div className="px-5">
 					<Outlet></Outlet>
 				</div>
 			</div>

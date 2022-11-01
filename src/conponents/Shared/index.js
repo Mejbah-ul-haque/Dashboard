@@ -31,18 +31,18 @@ import UsFlag from "../../images/us.png";
 export default function Header() {
 	return (
 		<>
-			<div className="navbar pr-10 bg-gray-900 ml-5 my-5 rounded-l-xl">
+			<div className="navbar pr-10 bg-gray-900 my-5 ml-5 rounded-l-xl">
 				<div className="navbar-start">
 					{/* <a className="btn btn-ghost normal-case text-xl text-white">FetPeo Inc</a> */}
 					<div className="dropdown">
 						<label tabIndex={0} className="btn btn-ghost lg:hidden">
-							<p className="text-black text-2xl">
+							<p className="text-white text-2xl">
 								<HiOutlineMenuAlt1 />
 							</p>
 						</label>
 						<ul
 							tabIndex={0}
-							className="menu menu-compact dropdown-content mt-3 p-3 shadow bg-gray-900 text-gray-200 rounded-box w-52"
+							className="menu menu-compact dropdown-content mt-3 p-3 shadow-xl bg-gray-800 text-gray-200 rounded-box w-52"
 						>
 							<li className="text-gray-400">
 								<a>Menu</a>

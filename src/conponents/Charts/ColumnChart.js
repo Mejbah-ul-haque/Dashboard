@@ -70,11 +70,11 @@ const ColumnChart = () => {
 		yaxis: [
 			{
 				axisTicks: {
-					show: true,
+					show: false,
 				},
 				axisBorder: {
 					show: false,
-					color: "#666",
+					color: "black",
 				},
 				labels: {
 					style: {
@@ -84,7 +84,7 @@ const ColumnChart = () => {
 				title: {
 					text: "",
 					style: {
-						color: "#yellow",
+						color: "yellow",
 					},
 				},
 				tooltip: {
